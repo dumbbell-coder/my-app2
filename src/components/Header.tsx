@@ -10,7 +10,7 @@ const nav = [
 
 export default function Header() {
   return (
-    <header className="m-10">
+    <header className="m-10 max-w-6xl mx-auto">
       <nav className="flex">
         <Link href="/" className="items-center">
 				<Image
