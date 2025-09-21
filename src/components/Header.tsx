@@ -18,8 +18,8 @@ export default function Header() {
   return (
     <header>
       {/* コンテナ幅・左右余白（端末幅に応じて） */}
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <nav className="flex h-25 md:h-35 items-center">
+      <div className="fixed top-0 left-0 w-full bg-white z-50 md:static">
+        <nav className="flex items-center justify-between px-4 py-3">
           {/* ロゴ */}
           <Link href="/" className="flex items-center">
             <Image
