@@ -5,40 +5,39 @@ export default function Home() {
   return (
     <>
       {/* コンテナ：中央寄せ＆左右余白（画面幅で増減） */}
-      <main className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <main className="md:px-8">
 
         {/* ===== Hero ===== */}
-        <section className="relative mt-8 sm:mt-12">
+        <section className="relative mb-20 md:mb-10">
           {/* 見出し：モバイルは通常フロー、md以上で画像の上に重ねる */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-['Mamelon'] font-bold tracking-tight mb-4 md:mb-0 md:absolute md:top-16 md:left-6 md:z-10">
+          <h1 className="text-2xl md:text-5xl font-['Mamelon'] font-bold tracking-tight mb-4 md:mb-0 absolute top-75 md:top-40 md:left-6 md:z-10">
             A treasure chest <br />
             filled with <br />
             Yuzuki&apos;s &quot;likes&quot;
           </h1>
 
           {/* 画像：モバイルは幅いっぱい、md以上は右寄せ＋最大幅750 */}
-          <div className="flex md:justify-end">
-            <Image
-              src="/home.png"
+          <div className="-mx-4 flex md:justify-end">
+            <picture>
+            <source media="(min-width: 768px)" srcSet="/home.png" />
+            <img
+              src="/home-s.png"
               alt="Yuzuki illustration"
-              width={750}
-              height={420}
-              priority
-              className="h-auto w-full max-w-[750px]"
-              sizes="(min-width:1024px) 750px, (min-width:640px) 60vw, 90vw"
+              className="w-full h-auto md:w-4/5 md:ml-auto"
             />
+            </picture>
           </div>
         </section>
 
         {/* ===== Intro ===== */}
-        <section className="mt-10 sm:mt-14">
-          <h2 className="text-3xl sm:text-4xl font-['Mamelon'] tracking-tight text-center">
+        <section className="bg-gray-100 -mx-4 py-10 px-5">
+          <h2 className="text-xl sm:text-4xl font-['Mamelon'] tracking-tight">
             About Content
           </h2>
           <p className="font-['Mamelon'] text-base md:text-xl mt-4 mx-auto max-w-prose leading-relaxed">
-            柚月の作品ギャラリーへようこそ 🎨
-            ここでは、わたしの大好きなイラストや工作を ✂️
-            心をこめて紹介しています 💕
+            柚月の作品ギャラリーへようこそ 🎨<br />
+            わたしの大好きなイラストや工作を ✂️<br />
+            心をこめて紹介しています 💕<br />
           </p>
         </section>
 
