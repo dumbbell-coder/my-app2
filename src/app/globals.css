@@ -7,37 +7,8 @@
   font-style: normal;
 }
 
-
-
-
-
-:root {
-  --background: #ffffff;
-  --foreground: #000000;
-}
-
-
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: "Mamelon" sans-serif;
-
-  /* 背景画像を追加 */
 }
 
-header {
-  background-image: url("/bag.png");
-  background-size: cover;       /* 全画面に広げる */
-  background-position: center;  /* 中央寄せ */
-	position: relative;
-}
 
-/* オーバーレイ用の疑似要素 */
-header:before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.6); /* 白を60%かぶせる */
-  pointer-events: none; /* クリック操作に影響しない */
-  z-index: -1; /* 背景の上、本文の下に配置 */
-}
