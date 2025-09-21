@@ -10,7 +10,7 @@ export default function Home() {
         {/* ===== Hero ===== */}
         <section className="relative mb-20 md:mb-10">
           {/* 見出し：モバイルは通常フロー、md以上で画像の上に重ねる */}
-          <h1 className="text-2xl md:text-5xl font-['Mamelon'] font-bold tracking-tight mb-4 md:mb-0 absolute top-75 md:top-40 md:left-6 md:z-10">
+          <h1 className="text-2xl md:text-5xl font-['Mamelon'] font-bold tracking-tight mb-4 md:mb-0 absolute top-87 md:top-40 md:left-6 md:z-10">
             A treasure chest <br />
             filled with <br />
             Yuzuki&apos;s &quot;likes&quot;
