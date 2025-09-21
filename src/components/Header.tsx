@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header>
       {/* コンテナ幅・左右余白（端末幅に応じて） */}
-      <div className="fixed top-0 left-0 w-full bg-white z-50 md:static">
+      <div className="fixed top-0 left-0 w-full bg-white z-50 max-w-7xl mx-auto md:static">
         <nav className="flex items-center justify-between px-4 py-3">
           {/* ロゴ */}
           <Link href="/" className="flex items-center">
@@ -68,7 +68,7 @@ export default function Header() {
             open ? "max-h-96" : "max-h-0"
           }`}
         >
-          <div className="flex flex-col gap-4 pb-6 pt-2 text-lg font-['Mamelon']">
+          <div className="flex flex-col gap-4 pb-6 pt-2 px-5 text-lg font-['Mamelon']">
             {nav.map((n) => (
               <Link
                 key={n.href}
