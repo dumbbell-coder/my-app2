@@ -11,7 +11,7 @@ export default function Gallery() {
   return (
     <>
       <h1 className="font-['Mamelon'] text-2xl font-bold">Gallery</h1>
-      <div className="mt-6 grid gap-4 sm:grid-cols-3">
+      <div className="my-18 grid gap-4 sm:grid-cols-3">
         {items.map((it) => (
           <figure key={it.id} className="border p-4">
             <div className="aspect-[4/3] relative overflow-hidden">
